@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html ng-app="resume">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,inhttpitial-scale=1"/>
+
+    <title>朱晨雨的简历</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<nav class="navbar navbar-static-top navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img src="img/weixing.png" alt=""/>
+            <span class="glyphicon glyphicon-phone"></span>
+            <a href="#"> 18367280925</a>
+            <span class="glyphicon glyphicon-envelope"></span>
+            <a href="#">zcyu0925@126.com</a>
+            <span class="glyphicon glyphicon-user"></span>
+            <a href="#">xxxxxxxxxxxxxxx</a>
+            <span class="glyphicon glyphicon-book"></span>
+            <a href="#">xxxxxxxxxxxxx</a>
+        </div>
+        <p class="navbar-text navbar-right">
+            <span>朱晨雨</span>
+            <span>前端工程师</span>
+        </p>
+    </div>
+</nav>
+<div class="container">
+<div class="row" ng-controller="education">
+    <div class="col-sm-6 ">
+        <div class="list-group">
+            <a href="#" class="list-group-item" >
+                <h4 class="list-group-item-heading">学历</h4>
+                <p class="list-group-item-text" ng-repeat="k in education">
+                    <a href="#">{{k.type}}</a>
+                    <a href="#">{{k.schoolname}}</a>
+                    <a href="#">{{k.major}}</a>
+                    <a href="#">{{k.start}}</a>
+                    <a href="#">{{k.ended}}</a>
+                    //a里面不能还有a！
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-6"><div class="list-group">
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">技能</h4>
+            <p class="list-group-item-text">...</p>
+        </a>
+    </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 ">
+        <div class="list-group">
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">语言</h4>
+                <p class="list-group-item-text">...</p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-6"><div class="list-group">
+        <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">WEB后端</h4>
+            <p class="list-group-item-text">...</p>
+        </a>
+    </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-6 ">
+        <div class="list-group">
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">项目经验</h4>
+                <p class="list-group-item-text">
+
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="list-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">其他</div>
+            <div class="panel-body">
+                ...
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+</div>
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 text-center">
+                <a class="navbar-link"><span class="glyphicon glyphicon-link"></span></a>
+            </div>
+            <div class="col-xs-4 text-center">
+                <a class="navbar-link"><span class="glyphicon glyphicon-book"></span></a>
+            </div>
+            <div class="col-xs-4 text-center">
+                <a class="navbar-link"><span class="glyphicon glyphicon-cloud"></span></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/angular.js"></script>
+<script src="js/angular-route.js"></script>
+<script src="js/resume.js"></script>
+</body>
+</html>
